@@ -19,7 +19,7 @@ The data comes from a dataset available at https://simplemaps.com/data/us-zips. 
 - run `npm run dev` to run in a development environment with nodemon. This will allow you to play with the app, make changes and have the app restart to reflect them in real-time.
 
 ## Use
-Zip_it uses url-encoded parameters.
+Zip_it uses parameters passed to its endpoints via URI.
 
 Zip_it offers two endpoints: `zip` and `state`.
 

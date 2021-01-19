@@ -1,16 +1,12 @@
 require('dotenv').config();
 
-const express = require('express');
-const bodyParser = require('body-parser');
-
-
 // Logging
 const { httpLogger } = require('./middleware');
 const { logger } = require('./utils');
 
 //app setup
+const express = require('express');
 const app = express();
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(httpLogger);
 const port = process.env.PORT;
 
