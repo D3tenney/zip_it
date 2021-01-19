@@ -1,3 +1,9 @@
+*.sqlite
+*.csv
+*.txt
+*.zip
+*.xlsx
+
 # Logs
 logs
 *.log
