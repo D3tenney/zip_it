@@ -8,7 +8,8 @@ The data comes from a dataset available at https://simplemaps.com/data/us-zips. 
 
 ### Cloning and Dependencies
 - Clone the repository from GitHub (docs [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository))
-- run `npm install` to install dependencies listed in package.json
+- run `npm install` to install dependencies listed in `package.json`
+- run `cp .env.example .env` to create `.env` file. Unless you're altering the sequelize setup, it should be good to go. If you do use another database that requires user credentials, the `.env` file would be a great place to store them.
 
 ### Data setup
 - Zip_it uses [sequelize](https://sequelize.org/) as an ORM. It comes set up to work with a sqlite database at `/db/zipcode_db.sqlite`. To connect it to a different sequelize-compatible database (postgres, mysql, etc...), just alter the connection uri in `sequelize.js` and install the appropriate package (see [sequelize docs](https://sequelize.org/master/manual/getting-started.html)).
